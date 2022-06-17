@@ -1,3 +1,14 @@
+variables "access_key"
+{
+  type = string
+}
+
+variables "secret_key"
+{
+  type = string
+}
+
+
 provider "aws" {
   region     = "us-east-2"
   access_key = "${var.access_key}"
